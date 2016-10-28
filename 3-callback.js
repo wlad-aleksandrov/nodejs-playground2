@@ -5,7 +5,7 @@ var evenDoubler = function(v, callback){
     if(v%2){
         setTimeout(function(){
             callback(new Error("Odd input"));
-        }, waitTime)
+        }, waitTime);
     } else{
         setTimeout(function() {
             callback(null, v*2, waitTime);
